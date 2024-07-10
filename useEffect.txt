@@ -1,0 +1,33 @@
+function App() {
+
+  const [count1, setCount1] = useState(0)
+  const [count2, setCount2] = useState(0)
+
+  useEffect(() => {
+    console.log('run')
+  })
+
+  useEffect(() => {
+    console.log('run with empty deps')
+  }, [])
+
+  useEffect(() => {
+    console.log('run with deps')
+  }, [count2])
+
+  return (
+    <>
+
+      <button onClick={() => setCount1(count1 + 1)}>Click1</button>
+      <button onClick={() => setCount2(count2 + 1)}>Click2</button>
+    </>
+  );
+}
+
+anh ơi, em gửi lại anh bài test ạ
+link git:
+https://github.com/viethoanga6nvc/section1
+https://github.com/viethoanga6nvc/section2
+link preview:
+https://viethoanga6nvc.github.io/section1/
+https://viethoanga6nvc.github.io/section2/
